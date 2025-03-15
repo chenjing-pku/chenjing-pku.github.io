@@ -8,3 +8,4 @@ Jing received her Ph.D degree from Peking University in signal and information p
 陈婧于2009年获北京大学智能科学系信号与信息处理专业博士学位。2009年到2012年，她在英国剑桥大学从事博士后研究。曾任英国皇家学会及英国皇家工程学会联合授予的牛顿国际学者，以及剑桥大学沃弗森学院（WolfsonCollege）Research Fellow。她于2013年加入北京大学智能科学系，任百人计划研究员。
 
 {% include section.html %}
+
