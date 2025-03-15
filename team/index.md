@@ -2,34 +2,46 @@
 title: Team
 nav:
   order: 3
-  tooltip: About our team
+  tooltip: Team
 ---
 
 # {% include icon.html icon="fa-solid fa-users" %}Team
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+博士生 (PhD students):
 
-{% include section.html %}
+​     牛亚东 (Niu,Y.D.)
 
-{% include list.html data="members" component="portrait" filter="role == 'pi'" %}
-{% include list.html data="members" component="portrait" filter="role != 'pi'" %}
+​     王波（Wang, B.)
 
-{% include section.html background="images/background.jpg" dark=true %}
+​     许曦然（Xu, X.R.)
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+​     陈旭宁（Chen, X.N.)
 
-{% include section.html %}
+​     肖博达（Xiao, B.D.)
 
-{% capture content %}
+​     晏雨婕（Yan, Y.J.)
 
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
+硕士生 (Master students):
 
-{% endcapture %}
+​     栗楠（Li, N.)
 
-{% include grid.html style="square" content=content %}
+​     张龙翔（Zhang, L.X.)
+
+​     张泽辰（Zhang, Z.C.)
+
+​     孙晨晔（Sun, C.Y.)
+
+​     朱昊麟（Zhu, H.L.)
+
+​     张傲克（Zhang, A.K.)
+
+本科生(Undergraduate):
+
+​	 梁景华（Liang, J.H.)
+
+​     孙思南（Sun, S.N.)
+
+​     郑林泽（Zheng, L.Z.)
+
+​     李松毅（Li S.Y.)
+
