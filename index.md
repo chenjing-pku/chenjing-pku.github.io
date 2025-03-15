@@ -3,8 +3,7 @@
 
 # chenjing-pku's Website
 
-An engaging 1-3 sentence description of your lab.
-
+Jing received her Ph.D degree from Peking University in signal and information processing in 2009. She worked as a Newton International Fellow, and a research associate with Prof. Brian Moore at the hearing laboratory of Department of Experimental Psychology of University of Cambridge, UK, in 2009-2012. She was a research fellow of Wolfson College at University of Cambridge, UK. She joined Department of Machine Intelligence of Peking University as a research professor in 2013.
 {% include section.html %}
 
 ## Highlights
