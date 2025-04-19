@@ -31,3 +31,57 @@
   type: paper
   plugin: sources.py
   file: sources.yaml
+- id: doi:10.21437/interspeech.2021-24
+  title: Effect of Carrier Bandwidth on Understanding Mandarin Sentences in Simulated
+    Electric-Acoustic Hearing
+  authors:
+  - Feng Wang
+  - Jing Chen
+  - Fei Chen
+  publisher: Interspeech 2021
+  date: '2021-08-30'
+  link: https://doi.org/g9fvqd
+  type: paper
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.23919/eusipco54536.2021.9616195
+  title: Auditory Attention Decoding from EEG using Convolutional Recurrent Neural
+    Network
+  authors:
+  - Zhen Fu
+  - Bo Wang
+  - Xihong Wu
+  - Jing Chen
+  publisher: 2021 29th European Signal Processing Conference (EUSIPCO)
+  date: '2021-08-23'
+  link: https://doi.org/g9fvqp
+  type: paper
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.23919/eusipco54536.2021.9616059
+  title: Eye-gaze Estimation with HEOG and Neck EMG using Deep Neural Networks
+  authors:
+  - Zhen Fu
+  - Bo Wang
+  - Fei Chen
+  - Xihong Wu
+  - Jing Chen
+  publisher: 2021 29th European Signal Processing Conference (EUSIPCO)
+  date: '2021-08-23'
+  link: https://doi.org/gpz2k5
+  type: paper
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1121/1.3689556
+  title: Effect of enhancement of spectral changes on speech intelligibility and clarity
+    preferences for the hearing impaired
+  authors:
+  - Jing Chen
+  - Thomas Baer
+  - Brian C. J. Moore
+  publisher: The Journal of the Acoustical Society of America
+  date: '2012-04-01'
+  link: https://doi.org/gfsbzq
+  type: paper
+  plugin: sources.py
+  file: sources.yaml
