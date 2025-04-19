@@ -22,17 +22,12 @@
 - id: doi:10.1088/1741-2552/ab4340
   title: Congruent audiovisual speech enhances auditory attention decoding with EEG
   authors:
-  - Fu Z
-  - Wu X
-  - Chen J*
+  - Zhen Fu
+  - Xihong Wu
+  - Jing Chen
   publisher: Journal of Neural Engineering
   date: '2019-11-06'
   link: https://doi.org/ghddhq
   type: paper
-  journal: Journal of Neural Engineering
-  volume: 16
-  year: 2019
-  pages: '066033'
-  confirmed: true
   plugin: sources.py
   file: sources.yaml
