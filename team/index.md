@@ -19,9 +19,9 @@ nav:
 
 ## 硕士生 (Master students)
 
-张泽辰（Zhang, Z.C.）  
-孙晨晔（Sun, C.Y.）  
+张泽辰（Zhang, Z.C.）   
 朱昊麟（Zhu, H.L.）  
+孙晨晔（Sun, C.Y.） 
 张傲克（Zhang, A.K.）  
 梁景华（Liang, J.H.）  
 袁刘帅（Yuan, L.S.）  
