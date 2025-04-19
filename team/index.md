@@ -32,9 +32,7 @@ nav:
 ​     朱昊麟（Zhu, H.L.)
 
 ​     张傲克（Zhang, A.K.)
-
      梁景华(Liang, J.H.)
-
      袁刘帅(Yuan, L.S.)
 
 本科生(Undergraduate):
