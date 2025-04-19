@@ -31,16 +31,18 @@
   type: paper
   plugin: sources.py
   file: sources.yaml
-- id: doi:10.21437/interspeech.2021-24
-  title: Effect of Carrier Bandwidth on Understanding Mandarin Sentences in Simulated
-    Electric-Acoustic Hearing
+- id: doi:10.1109/ICASSP48485.2024.10448013
+  title: A DenseNet-Based Method for Decoding Auditory Spatial Attention with EEG
   authors:
-  - Feng Wang
+  - Xiran Xu
+  - Bo Wang
+  - Yujie Yan
+  - Xihong Wu
   - Jing Chen
-  - Fei Chen
-  publisher: Interspeech 2021
-  date: '2021-08-30'
-  link: https://doi.org/g9fvqd
+  publisher: ICASSP 2024 - 2024 IEEE International Conference on Acoustics, Speech
+    and Signal Processing (ICASSP)
+  date: '2024-04-14'
+  link: https://doi.org/g9f35h
   type: paper
   plugin: sources.py
   file: sources.yaml
