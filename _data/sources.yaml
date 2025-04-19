@@ -2,3 +2,13 @@
   type: paper
   description: ICASSP
   image: "images/wbicasspw.png"
+
+- id: doi:10.1088/1741-2552/ab4340
+  type: paper
+  title: "Congruent audiovisual speech enhances auditory attention decoding with EEG"
+  journal: "Journal of Neural Engineering"
+  volume: 16
+  year: 2019
+  pages: "066033"
+  authors: ["Fu Z", "Wu X", "Chen J*"]
+  confirmed: true  # 标记已验证DOI
