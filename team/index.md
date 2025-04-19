@@ -9,8 +9,6 @@ nav:
 
 博士生 (PhD students):
 
-​     牛亚东 (Niu,Y.D.)
-
 ​     王波（Wang, B.)
 
 ​     许曦然（Xu, X.R.)
@@ -21,11 +19,11 @@ nav:
 
 ​     晏雨婕（Yan, Y.J.)
 
+​     孙思南（Sun, S.N.)
+
+​     桂锦江（Gui, J.J.)
+
 硕士生 (Master students):
-
-​     栗楠（Li, N.)
-
-​     张龙翔（Zhang, L.X.)
 
 ​     张泽辰（Zhang, Z.C.)
 
@@ -35,13 +33,16 @@ nav:
 
 ​     张傲克（Zhang, A.K.)
 
+     梁景华（Liang, J.H.)
+
+     袁刘帅（Yuan, L.S.)
+
 本科生(Undergraduate):
-
-​	 梁景华（Liang, J.H.)
-
-​     孙思南（Sun, S.N.)
 
 ​     郑林泽（Zheng, L.Z.)
 
-​     李松毅（Li S.Y.)
+​     李松毅（Li, S.Y.)
 
+     张子枫（Zhang, Z.F.)
+
+     徐洋（Xu, Y.)
