@@ -32,9 +32,11 @@ nav:
 ​     朱昊麟（Zhu, H.L.)
 
 ​     张傲克（Zhang, A.K.)
+     
      梁景华(Liang, J.H.)
-     袁刘帅(Yuan, L.S.)
 
+     袁刘帅(Yuan, L.S.)
+     
 本科生(Undergraduate):
 
 ​     郑林泽（Zheng, L.Z.)
@@ -44,3 +46,4 @@ nav:
      张子枫 (Zhang, Z.F.)
 
      徐洋(Xu, Y.)
+
