@@ -129,22 +129,40 @@
 - id: doi:10.1186/s40535-017-0040-7
   type: paper
         
-- id: doi:10.1121/1.5093451
+- id: doi:10.1016/j.specom.2016.07.009
   type: paper
         
-- id: doi:10.1121/1.5093451
+- id: doi:10.1371/journal.pone.0106719
   type: paper
         
-- id: doi:10.1121/1.5093451
+- id: doi:10.1109/ICASSP.2013.6639353
   type: paper
         
-- id: doi:10.1121/1.5093451
+- id: doi:10.1007/s11460-012-0189-8
   type: paper
         
-- id: doi:10.1121/1.5093451
+- id: doi:10.1121/1.3689556
   type: paper
         
-- id: doi:10.1121/1.5093451
+- id: doi:10.1121/1.3688510
+  type: paper
+        
+- id: doi:10.1044/1092-4388(2011/10-0282)
+  type: paper
+          
+- id: doi:10.21437/interspeech.2010-474
+  type: paper
+          
+- id: doi:10.1159/000229302
+  type: paper
+          
+- id: doi:10.21437/interspeech.2007-195
+  type: paper
+          
+- id: doi:10.1016/j.specom.2007.05.005
+  type: paper
+          
+- id: doi:10.1016/j.heares.2004.03.010
   type: paper
   
   
