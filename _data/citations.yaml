@@ -31,6 +31,37 @@
   type: paper
   plugin: sources.py
   file: sources.yaml
+- id: doi:10.1109/ICASSP49660.2025.10889637
+  title: A Novel Multimodal Method for Decoding Speech Perception from Brain Activities
+  authors:
+  - Aoke Zhang
+  - Bo Wang
+  - Xihong Wu
+  - Jing Chen
+  publisher: ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech
+    and Signal Processing (ICASSP)
+  date: '2025-04-06'
+  link: https://doi.org/g9gsvm
+  type: paper
+  plugin: sources.py
+  file: sources.yaml
+- id: doi:10.1109/ICASSP49660.2025.10890810
+  title: Using Ear-EEG to Decode Auditory Attention in Multiple-speaker Environment
+  authors:
+  - Haolin Zhu
+  - Yujie Yan
+  - Xiran Xu
+  - Zhongshu Ge
+  - Pei Tian
+  - Xihong Wu
+  - Jing Chen
+  publisher: ICASSP 2025 - 2025 IEEE International Conference on Acoustics, Speech
+    and Signal Processing (ICASSP)
+  date: '2025-04-06'
+  link: https://doi.org/g9gsvn
+  type: paper
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.1109/ICASSP48485.2024.10448013
   title: A DenseNet-Based Method for Decoding Auditory Spatial Attention with EEG
   authors:
