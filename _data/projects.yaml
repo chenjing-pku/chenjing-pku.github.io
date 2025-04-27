@@ -6,19 +6,18 @@
   description: 科技创新2030“脑科学与类脑研究”重大项目之课题 
   repo: greenelab/lab-website-template
   tags:
-    - resource
+    - 主持
 
-- title: Cool Package
-  subtitle: a subtitle
+- title: 基于听觉注意检测的助听方法研究
+  subtitle: 2021.01-2024.12
   group: featured
   image: images/photo.jpg
   link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  description: 自然科学基金面上项目
   tags:
-    - resource
+    - 主持
 
-- title: Cool Tutorial
+- title: 关于视听输入对听损患者听觉注意解码
   subtitle: a subtitle
   image: images/photo.jpg
   link: https://github.com/
