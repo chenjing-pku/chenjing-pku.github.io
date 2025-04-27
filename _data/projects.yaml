@@ -17,29 +17,66 @@
     - 主持
 
 - title: 关于视听输入对听损患者听觉注意解码
-  subtitle: a subtitle
+  subtitle: 2020.05-2021.05
   image: images/photo.jpg
   link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  description: 索诺瓦控股公司
   tags:
-    - resource
-    - publication
+    - 主持
 
-- title: Cool Web App
-  subtitle: a subtitle
+- title: 老年性聋的临床分型与干预策略研究
+  subtitle: 2018.12-2019.12	
   image: images/photo.jpg
   link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  description: 北京大学医信交叉项目
   tags:
-    - software
+    - 主持
 
-- title: Cool Web Server
-  subtitle: a subtitle
+- title: 基于深度神经网络的语谱变化增强算法
+  subtitle: 2018.06-2019.05	
   image: images/photo.jpg
   link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  repo: greenelab/lab-website-template
+  description: 	索诺瓦控股集团 
   tags:
-    - software
+    - 主持
+
+- title: 基于言语可懂度指数的声电双模态刺激方法及模式研究
+  subtitle: 2018.01-2020.12	
+  image: images/photo.jpg
+  link: https://github.com/
+  description: 自然科学基金面上项目 
+  tags:
+    - 主持
+
+- title: 语音语谱变化的增强对汉语语音可懂度的影响
+  subtitle: 2016.11-2017.10
+  image: images/photo.jpg
+  link: https://github.com/
+  description: 索诺瓦控股集团 
+  tags:
+    - 主持
+
+- title: 听力损伤评价方法及计算模型
+  subtitle: 2015.01-2018.12
+  group: featured
+  image: images/photo.jpg
+  link: https://github.com/
+  description: 自然科学基金面上项目
+  tags:
+    - 主持
+
+- title: 听觉抗噪声机理及听力康复技术的研究
+  subtitle: 2013.09-2015.04
+  image: images/photo.jpg
+  link: https://github.com/
+  description: 北京大学985项目建设课题（百人计划）
+  tags:
+    - 主持
+
+- title: Follow-on Funding for Newton Alumni
+  subtitle: 2013.06-2018.05
+  image: images/photo.jpg
+  link: https://github.com/
+  description: The Royal Academy of Engineering UK 
+  tags:
+    - Principal Investigator
