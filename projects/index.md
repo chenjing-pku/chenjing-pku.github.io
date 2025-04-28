@@ -7,8 +7,6 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Projects
 
-Focusing on BCI.
-
 {% include tags.html tags="publication, resource, website" %}
 
 {% include search-info.html %}
