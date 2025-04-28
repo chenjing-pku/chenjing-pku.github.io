@@ -7,8 +7,6 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-Focusing on BCI.
-
 {% include section.html %}
 
 ## All
