@@ -1,8 +1,8 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
-- id: arxiv:2401.04964
-  title: Self-supervised speech representation and contextual text embedding for match-mismatch
-    classification with EEG recording
+- id: doi:10.1109/ICASSPW62465.2024.10625969
+  title: Self-Supervised Speech Representation and Contextual Text Embedding for Match-Mismatch
+    Classification with EEG Recording
   authors:
   - Bo Wang
   - Xiran Xu
@@ -11,12 +11,11 @@
   - YuJie Yan
   - Xihong Wu
   - Jing Chen
-  publisher: arXiv
-  date: '2024-02-02'
-  link: https://arxiv.org/abs/2401.04964
+  publisher: 2024 IEEE International Conference on Acoustics, Speech, and Signal Processing
+    Workshops (ICASSPW)
+  date: '2024-04-14'
+  link: https://doi.org/g9h37p
   type: paper
-  description: ICASSP
-  image: images/wbicasspw.png
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.1088/1741-2552/ab4340
@@ -118,8 +117,8 @@
   type: paper
   plugin: sources.py
   file: sources.yaml
-- id: arxiv:2401.04965
-  title: 'ConvConcatNet: a deep convolutional neural network to reconstruct mel spectrogram
+- id: doi:10.1109/ICASSPW62465.2024.10626859
+  title: 'ConvConcatNet: A Deep Convolutional Neural Network to Reconstruct Mel Spectrogram
     from the EEG'
   authors:
   - Xiran Xu
@@ -129,9 +128,10 @@
   - Zechen Zhang
   - Xihong Wu
   - Jing Chen
-  publisher: arXiv
-  date: '2024-09-24'
-  link: https://arxiv.org/abs/2401.04965
+  publisher: 2024 IEEE International Conference on Acoustics, Speech, and Signal Processing
+    Workshops (ICASSPW)
+  date: '2024-04-14'
+  link: https://doi.org/g9h39m
   type: paper
   plugin: sources.py
   file: sources.yaml
@@ -317,8 +317,8 @@
   type: paper
   plugin: sources.py
   file: sources.yaml
-- id: arxiv:2008.02519
-  title: Spectral-change enhancement with prior SNR for the hearing impaired
+- id: doi:10.18154/RWTH-CONV-238821
+  title: Spectral-change Enhancement with prior SNR for the Hearing Impaired
   authors:
   - Xiang Li
   - Xin Tian
@@ -327,9 +327,10 @@
   - Xihong Wu
   - Dingsheng Luo
   - Jing Chen
-  publisher: arXiv
-  date: '2020-08-07'
-  link: https://arxiv.org/abs/2008.02519
+  publisher: 'Proceedings of the ICA 2019 and EAA Euroregio : 23rd International Congress
+    on Acoustics'
+  date: '2019-01-01'
+  link: https://doi.org/g9h39n
   type: paper
   plugin: sources.py
   file: sources.yaml
