@@ -1,7 +1,5 @@
-- id: arxiv:2401.04964
+- id: doi:10.1109/ICASSPW62465.2024.10625969
   type: paper
-  description: ICASSP
-  image: "images/wbicasspw.png"
 
 - id: doi:10.1088/1741-2552/ab4340
   type: paper
@@ -24,7 +22,7 @@
 - id: doi:10.1121/1.3689556
   type: paper
   
-- id: arxiv:2401.04965
+- id: doi:10.1109/ICASSPW62465.2024.10626859
   type: paper
   
 - id: doi:10.1109/ICASSP48485.2024.10448281
@@ -72,7 +70,7 @@
 - id: doi:10.1109/icassp40776.2020.9053460
   type: paper
       
-- id: arxiv:2008.02519
+- id: doi:10.18154/RWTH-CONV-238821
   type: paper
       
 - id: doi:10.1109/ICASSP.2019.8682503
