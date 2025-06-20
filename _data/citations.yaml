@@ -30,6 +30,22 @@
   type: paper
   plugin: sources.py
   file: sources.yaml
+- id: doi:10.21437/Interspeech.2024-739
+  title: Auditory Attention Decoding in Four-Talker Environment with EEG
+  authors:
+  - Yujie Yan
+  - Xiran Xu
+  - Haolin Zhu
+  - Pei Tian
+  - Zhongshu Ge
+  - Xihong Wu
+  - Jing Chen
+  publisher: Interspeech 2024
+  date: '2024-09-01'
+  link: https://doi.org/g9qwf3
+  type: paper
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.1109/ICASSP49660.2025.10889637
   title: A Novel Multimodal Method for Decoding Speech Perception from Brain Activities
   authors:
