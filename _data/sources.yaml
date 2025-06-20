@@ -3,9 +3,14 @@
 
 - id: doi:10.1088/1741-2552/ab4340
   type: paper
-
+  
+- id: doi: 10.21437/Interspeech.2024-739
+  type: paper
+  link: https://zenodo.org/records/10803229
+  
 - id: doi:10.1109/ICASSP49660.2025.10889637
   type: paper
+  link: https://zenodo.org/records/10803261
   
 - id: doi:10.1109/ICASSP49660.2025.10890810
   type: paper
@@ -81,6 +86,7 @@
       
 - id: doi:10.1088/1741-2552/ab4340
   type: paper
+  link: https://disk.pku.edu.cn/link/AAA0E62E014EF44B40BBCAB46B2FED7227
       
 - id: doi:10.1016/j.heares.2019.06.005
   type: paper
