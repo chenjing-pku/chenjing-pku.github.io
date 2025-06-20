@@ -35,7 +35,7 @@ nav:
 
 ## 已毕业成员 (Graduates)
 
-邢远（Xing, Y.） 
+邢远（Xing, Y.）  
 吴冀平（Wu, J.P.） 
 杨弘颖（Yang, H.Y.） 
 宋明洁（Song, M.J.） 
