@@ -32,3 +32,16 @@ nav:
 李松毅（Li, S.Y.）  
 张子枫（Zhang, Z.F.）  
 徐洋（Xu, Y.）
+
+## 已毕业成员 (Graduates)
+
+邢远（Xing, Y.）  
+吴冀平（Wu, J.P.）  
+杨弘颖（Yang, H.Y.）  
+宋明洁（Song, M.J.）
+杜逾凡（Du, Y.F.）
+陈高峰（Chen, G.F.）
+钱应（Qian, Y.）
+伏臻（Fu, Z.）
+李想（Li, X.）
+宋涛（Song, T.）
