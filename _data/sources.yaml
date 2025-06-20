@@ -3,6 +3,9 @@
 
 - id: doi:10.1088/1741-2552/ab4340
   type: paper
+  button:
+    -type: website
+    -link: https://disk.pku.edu.cn/link/AAA0E62E014EF44B40BBCAB46B2FED7227
 
 - id: doi:10.21437/Interspeech.2024-739
   type: paper
