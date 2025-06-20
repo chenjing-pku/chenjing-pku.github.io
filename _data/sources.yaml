@@ -6,9 +6,15 @@
 
 - id: doi:10.21437/Interspeech.2024-739
   type: paper
+  button:
+    -type: website
+    -link: https://zenodo.org/records/10803229
   
 - id: doi:10.1109/ICASSP49660.2025.10889637
   type: paper
+  button:
+    -type: website
+    -link: https://zenodo.org/records/10803261
   
 - id: doi:10.1109/ICASSP49660.2025.10890810
   type: paper
