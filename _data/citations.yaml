@@ -28,7 +28,7 @@
   date: '2019-11-06'
   link: https://doi.org/ghddhq
   type: paper
-  button:
+  buttons:
     -type: data
     -link: https://disk.pku.edu.cn/link/AAA0E62E014EF44B40BBCAB46B2FED7227
   plugin: sources.py
@@ -47,7 +47,7 @@
   date: '2024-09-01'
   link: https://doi.org/g9qwf3
   type: paper
-  button:
+  buttons:
     -type: data
     -link: https://zenodo.org/records/10803229
   plugin: sources.py
@@ -64,7 +64,7 @@
   date: '2025-04-06'
   link: https://doi.org/g9gsvm
   type: paper
-  button:
+  buttons:
     -type: data
     -link: https://zenodo.org/records/10803261
   plugin: sources.py
