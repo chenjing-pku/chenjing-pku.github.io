@@ -29,8 +29,8 @@
   link: https://doi.org/ghddhq
   type: paper
   buttons:
-    -type: data
-    -link: https://disk.pku.edu.cn/link/AAA0E62E014EF44B40BBCAB46B2FED7227
+  - type: preprint
+    link: https://disk.pku.edu.cn/link/AAA0E62E014EF44B40BBCAB46B2FED7227
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.21437/Interspeech.2024-739
@@ -48,8 +48,8 @@
   link: https://doi.org/g9qwf3
   type: paper
   buttons:
-    -type: data
-    -link: https://zenodo.org/records/10803229
+  - type: preprint
+    link: https://zenodo.org/records/10803229
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.1109/ICASSP49660.2025.10889637
@@ -65,8 +65,8 @@
   link: https://doi.org/g9gsvm
   type: paper
   buttons:
-    -type: data
-    -link: https://zenodo.org/records/10803261
+  - type: preprint
+    link: https://zenodo.org/records/10803261
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.1109/ICASSP49660.2025.10890810
