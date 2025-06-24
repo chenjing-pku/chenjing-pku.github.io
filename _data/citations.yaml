@@ -28,7 +28,9 @@
   date: '2019-11-06'
   link: https://doi.org/ghddhq
   type: paper
-  repo: https://disk.pku.edu.cn/link/AAA0E62E014EF44B40BBCAB46B2FED7227
+  buttons:
+  - type: data
+    link: https://disk.pku.edu.cn/link/AAA0E62E014EF44B40BBCAB46B2FED7227
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.21437/Interspeech.2024-739
