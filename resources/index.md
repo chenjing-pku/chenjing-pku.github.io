@@ -7,12 +7,12 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-wrench" %}Resources
 
-## Featured
+## Code
 
-{% include list.html component="card" data="projects" filter="group == 'featured'" %}
+{% include list.html component="card" data="projects" filter="group == 'code'" %}
 
 {% include section.html %}
 
-## More
+## Data
 
-{% include list.html component="card" data="projects" filter="!group" style="small" %}
+{% include list.html component="card" data="projects" filter="group == 'data'" %}
