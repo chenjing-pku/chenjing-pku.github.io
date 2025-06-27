@@ -86,37 +86,27 @@
   image: images/photo.jpg
   description: ICASSPW 2024
   link: https://github.com/xuxiran/ConvConcatNet
-  tags:
-    - github
 
 - title: Self-Supervised Speech Representation and Contextual Text Embedding for Match-Mismatch Classification with EEG Recording
   group: code
   image: images/photo.jpg
   description: ICASSPW 2024
   link: https://github.com/bobwangPKU/EEG-Stimulus-Match-Mismatch
-  tags:
-    - github
 
 - title: Using Ear-EEG to Decode Auditory Attention in Multiple-speaker Environment
   group: data
   image: images/photo.jpg
   description: ICASSP 2025
   link: https://zenodo.org/records/10803261
-  tags:
-    - website
 
 - title: Auditory Attention Decoding in Four-Talker Environment with EEG
   group: data
   image: images/photo.jpg
   description: Interspeech 2024
   link: https://zenodo.org/records/10803229
-  tags:
-    - website
 
 - title: Congruent audiovisual speech enhances auditory attention decoding with EEG
   group: data
   image: images/photo.jpg
   description: Journal of Neural Engineering 2019
   link: https://disk.pku.edu.cn/link/AAA0E62E014EF44B40BBCAB46B2FED7227
-  tags:
-    - website
