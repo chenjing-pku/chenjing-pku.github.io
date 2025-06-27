@@ -64,10 +64,6 @@
   date: '2025-04-06'
   link: https://doi.org/g9gsvm
   type: paper
-  repo: https://zenodo.org/records/10803261
-  buttons:
-  - type: data
-    link: https://zenodo.org/records/10803261
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.1109/ICASSP49660.2025.10890810
@@ -85,6 +81,9 @@
   date: '2025-04-06'
   link: https://doi.org/g9gsvn
   type: paper
+  buttons:
+  - type: data
+    link: https://zenodo.org/records/10803261
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.1109/ICASSP48485.2024.10448013
