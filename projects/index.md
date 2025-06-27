@@ -18,4 +18,4 @@ nav:
 | 2016.11 -- 2017.10 |    语音语谱变化的增强对汉语语音可懂度的影响  |   索诺瓦控股集团    |   主持      |
 | 2015.01 -- 2018.12 |    听力损伤评价方法及计算模型  |   自然科学基金面上项目     |   主持      |
 | 2013.09 -- 2015.04 |    听觉抗噪声机理及听力康复技术的研究  |   北京大学985项目建设课题（百人计划）    |   主持      |
-| 2013.06 -- 2018.05	|    Follow-on Funding for Newton Alumni  |   The Royal Academy of Engineering UK     |   Principal Investigator    |
+| 2013.06 -- 2018.05 |    Follow-on Funding for Newton Alumni  |   The Royal Academy of Engineering UK     |   Principal Investigator    |
