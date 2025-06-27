@@ -81,14 +81,6 @@
   tags:
     - Principal Investigator
 
-- title: ConvConcatNet: A Deep Convolutional Neural Network to Reconstruct Mel Spectrogram from the EEG
-  group: code
-  image: images/photo.jpg
-  description: ICASSPW 2024
-  link: https://github.com/xuxiran/ConvConcatNet
-  tags:
-    - github
-
 - title: Self-Supervised Speech Representation and Contextual Text Embedding for Match-Mismatch Classification with EEG Recording
   group: code
   image: images/photo.jpg
