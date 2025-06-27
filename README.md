@@ -5,7 +5,7 @@
 
   # chenjing-pku's Website
 
-  Visit **[chenjing-pku.github.io/chenjing-pku](https://chenjing-pku.github.io/)** 🚀
+  Visit **[chenjing-pku.github.io](https://chenjing-pku.github.io/)** 🚀
 
   _Built with [Lab Website Template](https://greene-lab.gitbook.io/lab-website-template-docs)_
  
