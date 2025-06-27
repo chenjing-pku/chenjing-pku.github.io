@@ -7,7 +7,7 @@
 - title: Self-Supervised Speech Representation and Contextual Text Embedding for Match-Mismatch Classification with EEG Recording
   group: code
   image: images/photo.jpg
-  escription: ICASSPW 2024
+  description: ICASSPW 2024
   link: https://github.com/bobwangPKU/EEG-Stimulus-Match-Mismatch
 
 - title: Using Ear-EEG to Decode Auditory Attention in Multiple-speaker Environment
