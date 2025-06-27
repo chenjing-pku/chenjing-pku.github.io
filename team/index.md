@@ -15,7 +15,7 @@ nav:
 晏雨婕（Yan, Y.J., 2023级）  
 孙思南（Sun, S.N., 2024级）  
 桂锦江（Gui, J.J., 2024级）  
-张子枫（Zhang, Z.F., 2025级）  
+张梓峰（Zhang, Z.F., 2025级）  
 徐洋（Xu, Y., 2025级）
 
 ## 硕士生 (Master students)
