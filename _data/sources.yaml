@@ -9,11 +9,16 @@
 
 - id: doi:10.21437/Interspeech.2024-739
   type: paper
-  repo: https://zenodo.org/records/10803229
+  buttons:
+    - type: data
+      link: https://zenodo.org/records/10803229
   
 - id: doi:10.1109/ICASSP49660.2025.10889637
   type: paper
-  repo: https://zenodo.org/records/10803261 
+  repo: https://zenodo.org/records/10803261
+  buttons:
+    - type: data
+      link: https://zenodo.org/records/10803261
   
 - id: doi:10.1109/ICASSP49660.2025.10890810
   type: paper
