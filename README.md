@@ -3,7 +3,7 @@
   ![on-pull-request](../../actions/workflows/on-pull-request.yaml/badge.svg)
   ![on-schedule](../../actions/workflows/on-schedule.yaml/badge.svg)
 
-  # chenjing-pku's Website
+  # CHEN Jing (陈婧)
 
   Visit **[chenjing-pku.github.io](https://chenjing-pku.github.io/)** 🚀
 
