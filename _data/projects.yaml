@@ -110,3 +110,9 @@
   image: images/photo.jpg
   description: Journal of Neural Engineering 2019
   link: https://disk.pku.edu.cn/link/AAA0E62E014EF44B40BBCAB46B2FED7227
+
+- title: Overestimated performance of auditory attention decoding caused by experimental design in EEG recordings
+  group: data
+  image: images/photo.jpg
+  description: Interspeech 2025
+  link: https://zenodo.org/records/14887886
