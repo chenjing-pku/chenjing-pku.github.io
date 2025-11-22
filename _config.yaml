@@ -71,3 +71,15 @@ exclude:
   - README.md
   - LICENSE.md
   - CITATION.cff
+
+nav:
+  - Home: /
+  - Recruitment: /recruitment/
+  - Publication: /publication/
+  - Resources: /resources/
+  - Team: /team/
+  - Projects: /projects/
+  - Contact: /contact/
+  
+  
+
