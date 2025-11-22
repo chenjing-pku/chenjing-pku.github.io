@@ -1,7 +1,7 @@
 ---
 title: Recruitment
 nav:
-  order: 2
+  order: 1
   tooltip: Recruitment
 ---
 
