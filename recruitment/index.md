@@ -1,3 +1,10 @@
+---
+title: Recruitment
+nav:
+  order: 2
+  tooltip: Recruitment
+---
+
 # {% include icon.html icon="fa-solid fa-users" %}Recruitment
 
 **## 2026年“申请-考核制”博士生招生信息**
