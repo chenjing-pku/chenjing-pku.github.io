@@ -288,9 +288,8 @@
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.3969/j.issn.1672-2922.2021.03.009
-  title: "\u4E0D\u540C\u8A00\u8BED\u8BC6\u522B\u80FD\u529B\u7684\u8001\u5E74\u6027\
-    \u804B\u8033\u8717\u7535\u56FE\u7279\u5F81\u5206\u6790-\u8BBA\u6587-\u4E07\u65B9\
-    \u533B\u5B66\u7F51"
+  title: "\u4E07\u65B9\u533B\u5B66\u7F51-\u533B\u5B66\u4E13\u4E1A\u4FE1\u606F\u670D\
+    \u52A1\u63D0\u4F9B\u5546"
   authors: []
   publisher: ''
   date: ''
