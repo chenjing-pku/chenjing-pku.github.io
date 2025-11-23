@@ -1,114 +1,105 @@
-/* 外层容器：横向排列卡片 + 自动换行 */
-.cards-container {
-display: flex;
-flex-wrap: wrap;          /* ★ 自动换行 */
-justify-content: center;  /* ★ 居中对齐 */
-gap: 12px;                /* ★ 卡片间距 */
-padding: 12px;
-}
-
-/* 外层卡片：固定高度 + 垂直布局 + 居中对齐内容 */
+/* 外层卡片：固定高度 + 垂直布局 + 整齐对齐 */
 .card {
-display: flex;
-flex-direction: column;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-width: 260px;
-height: 260px;
-margin: 0;                    /* 外层容器用 gap 控制间距 */
+  width: 260px;
+  height: 260px;                  /* ★ 固定卡片高度 */
+  margin: 12px;
 
-background: var(--background);
-border-radius: var(--rounded);
-box-shadow: var(--shadow);
-overflow: hidden;
+  background: var(--background);
+  border-radius: var(--rounded);
+  box-shadow: var(--shadow);
+  overflow: hidden;
 }
 
 /* small 样式 */
 .card[data-style="small"] {
-width: 240px;
-height: 240px;
+  width: 240px;
+  height: 240px;
 }
 
 /* 图片区域：固定高度 */
 .card-image {
-width: 100%;
-height: 90px;
-display: flex;
-justify-content: center;
-align-items: center;
-padding-top: 6px;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6px;
 }
 
 .card-image img {
-max-height: 80px;
-object-fit: contain;
+  max-height: 80px;
+  object-fit: contain;
 }
 
 /* 文本区域：固定布局 + 禁止单词分散拉伸 */
 .card-text {
-flex: 1;
-width: 100%;
-padding: 12px;
+  flex: 1;
+  width: 100%;
+  padding: 12px;
 
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
-text-align: center;
-text-align-last: center;
+  text-align: center;
+  text-align-last: center;
 
-font-size: 0.98rem;
+  font-size: 0.98rem;
 
-white-space: normal !important;
-word-spacing: normal !important;
-letter-spacing: normal !important;
+  white-space: normal !important;       /* ★ 修复英文单词被拉开 */
+  word-spacing: normal !important;      /* ★ 修复间距问题 */
+  letter-spacing: normal !important;
 }
 
 .card-text > * {
-margin: 0 !important;
+  margin: 0 !important;
 }
 
 /* 标题：固定高度 + 字体变大 + 禁止拉伸 */
 .card-title {
-font-family: var(--heading);
-font-weight: var(--semi-bold);
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
 
-height: 48px;
-overflow: hidden;
-text-align: center;
+  height: 48px;
+  overflow: hidden;
+  text-align: center;
 
-white-space: normal !important;
-word-spacing: normal !important;
-letter-spacing: normal !important;
+  white-space: normal !important;
+  word-spacing: normal !important;
+  letter-spacing: normal !important;
 
-font-size: 1.05rem;
+  font-size: 1.05rem;
 }
 
 /* 链接标题 */
 .card-text a {
-font-size: 1.05rem;
-text-align: center;
+  font-size: 1.05rem;
+  text-align: center;
 
-white-space: normal !important;
-word-spacing: normal !important;
-letter-spacing: normal !important;
+  white-space: normal !important;
+  word-spacing: normal !important;
+  letter-spacing: normal !important;
 }
 
 /* 副标题（年份）—— 修复英文单词变宽的问题 */
 .card-subtitle {
-font-style: italic;
-margin: 0 !important;
+  font-style: italic;
+  margin: 0 !important;
 
-height: 22px;
-line-height: 22px;
+  height: 22px;
+  line-height: 22px;
 
-text-align: center;
-text-align-last: center;
+  text-align: center;
+  text-align-last: center;
 
-white-space: normal !important;
-word-spacing: normal !important;
-letter-spacing: normal !important;
+  white-space: normal !important;
+  word-spacing: normal !important;
+  letter-spacing: normal !important;
 
-font-size: 0.95rem;
+  font-size: 0.95rem;
 }
