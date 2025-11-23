@@ -78,7 +78,7 @@ nav:
   - Publication: /publication/
   - Resources: /resources/
   - Team: /team/
-  - Projects: /projects/
+  # - Projects: /projects/
   - Contact: /contact/
   
   
