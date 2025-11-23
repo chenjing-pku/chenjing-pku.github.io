@@ -9,14 +9,38 @@ nav:
 
 ## Code
 
-<div class="grid-container">
-{% include list.html component="card" data="projects" filter="group == 'code'" %}
+<div class="custom-grid-container">
+  {% assign code_items = site.data.projects | where: "group", "code" %}
+  {% for item in code_items %}
+    <div class="custom-resource-card">
+      <div class="custom-card-content">
+        <a href="{{ item.url | default: item.pdf | default: item.redirect | default: item.link | default: '#' }}" target="_blank">
+          {{ item.title }}
+        </a>
+        <div class="custom-card-meta">
+           {{ item.venue }} {{ item.year }}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
 </div>
 
 {% include section.html %}
 
 ## Data
 
-<div class="grid-container">
-{% include list.html component="card" data="projects" filter="group == 'data'" %}
+<div class="custom-grid-container">
+  {% assign data_items = site.data.projects | where: "group", "data" %}
+  {% for item in data_items %}
+    <div class="custom-resource-card">
+      <div class="custom-card-content">
+        <a href="{{ item.url | default: item.pdf | default: item.redirect | default: item.link | default: '#' }}" target="_blank">
+          {{ item.title }}
+        </a>
+        <div class="custom-card-meta">
+           {{ item.venue }} {{ item.year }}
+        </div>
+      </div>
+    </div>
+  {% endfor %}
 </div>
