@@ -1,93 +1,65 @@
-/* _sass/_card.scss - Modified for Clean Text Grid */
+/* _sass/_card.scss */
 
-/* 1. 外层容器：控制整体网格布局 */
-.grid-container {
-  display: flex;
-  flex-wrap: wrap;          /* 允许换行 */
-  gap: 20px;                /* 卡片之间的间距 */
+/* 1. 网格容器：负责横向排列 */
+.custom-grid-container {
+  display: grid;
+  /* 自动适应宽度：每列最窄 280px，宽了就自动并排更多 */
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px; /* 卡片间距 */
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
-/* 2. 针对 list.html 可能产生的中间层级进行穿透处理 */
-.grid-container > * {
-  /* 确保 list.html 生成的元素（可能是 div 或 a 标签）能横向排列 */
-  display: block; 
-}
-
-/* 3. 卡片样式重置 */
-.card {
-  /* ★ 强制横向排版：计算宽度，每行放3个 (减去间距) */
-  width: calc(33.33% - 15px) !important; 
-  min-width: 280px;         /* 最小宽度，防止太窄 */
-  flex-grow: 1;             /* 允许自动填补空白 */
-  
-  display: flex;
-  flex-direction: column;
-  height: auto;             /* 高度自适应内容 */
-  min-height: 120px;        /* 最小高度 */
-  
-  margin: 0 !important;     /* 清除原有边距，由 gap 控制 */
-  background: #ffffff;
+/* 2. 自定义卡片样式 (完全脱离原本的 .card) */
+.custom-resource-card {
+  background-color: #ffffff;
+  border: 1px solid #e1e4e8; /* 浅灰色边框 */
   border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-  border: 1px solid rgba(0,0,0,0.05);
-  overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-/* 悬停效果 */
-.card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
-
-/* 4. ★ 核心修改：隐藏图标区域 (烧瓶/图片) */
-.card-image {
-  display: none !important;
-}
-
-/* 5. 文本区域样式优化 */
-.card-text {
-  padding: 20px !important;
-  width: 100%;
-  text-align: center;       /* 文字居中 */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  
+  min-height: 120px; /* 只有文字，不需要太高 */
+  padding: 20px;
+  text-align: center;
+  
+  transition: all 0.2s ease-in-out;
 }
 
-/* 标题链接 */
-.card-text a {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: #007bff;           /* 蓝色链接 */
-  text-decoration: none;
-  line-height: 1.4;
-  margin-bottom: 8px;
+/* 悬停效果 */
+.custom-resource-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+  border-color: #007bff; /* 悬停时边框变蓝 */
+}
+
+/* 3. 卡片内容区域 */
+.custom-card-content {
+  width: 100%;
+}
+
+/* 标题链接样式 */
+.custom-resource-card a {
   display: block;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 1.05rem; /* 字体大小 */
+  font-weight: 600;   /* 加粗 */
+  color: #0366d6;     /* 链接蓝色 */
+  text-decoration: none;
+  line-height: 1.5;
+  margin-bottom: 10px;
 }
 
-.card-text a:hover {
+.custom-resource-card a:hover {
   text-decoration: underline;
 }
 
-/* 年份/期刊样式 (找回原本显示的数据) */
-.card-subtitle {
+/* 年份和期刊样式 */
+.custom-card-meta {
   font-size: 0.9rem;
-  color: #666;
+  color: #586069; /* 深灰色 */
   font-style: italic;
-  margin-top: 5px;
-}
-
-/* 6. 手机端适配 */
-@media (max-width: 768px) {
-  .card {
-    width: 100% !important; /* 手机上强制占满一行 */
-  }
-  .grid-container {
-    gap: 15px;
-  }
 }
