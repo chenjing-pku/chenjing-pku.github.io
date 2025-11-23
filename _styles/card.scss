@@ -1,80 +1,93 @@
 /* _sass/_card.scss */
 
-/* 1. 新增：卡片容器 - 负责把卡片横着排 */
+/* 1. 容器样式：控制横向排列 */
+/* 只要你在 resources.md 里加上了 <div class="card-container">，这个就会生效 */
 .card-container {
   display: flex;
-  flex-wrap: wrap;          /* 允许换行 */
-  gap: 20px;                /* 卡片之间的间距 */
-  justify-content: flex-start; /* 从左对齐 */
+  flex-wrap: wrap;           /* 允许换行 */
+  gap: 20px;                 /* 卡片之间的间距 */
+  justify-content: flex-start; 
   width: 100%;
   margin-bottom: 40px;
+  
+  /* 针对 list.html 可能产生的额外包裹层的容错处理 */
+  & > div {
+     display: contents; /* 如果 list.html 自身带了一层 div，消除它的影响 */
+  }
 }
 
-/* 2. 卡片本体 - 强制固定尺寸 */
+/* 2. 卡片本体：固定尺寸 */
 .card {
+  /* 强制卡片为 flex 布局且固定宽度 */
   display: flex;
   flex-direction: column;
   align-items: center;
   
-  /* ★ 核心修复：使用 flex 属性锁死宽度，防止被挤压或拉伸 */
-  flex: 0 0 260px;          
-  width: 260px;             /* 双重保险：固定宽度 */
-  height: 280px;            /*稍微增加高度以容纳长标题 */
+  /* ★ 关键：固定宽度和高度 */
+  width: 260px;
+  min-width: 260px;
+  height: 280px;
   
-  margin: 0;                /* 间距由 container 的 gap 控制 */
-  background: var(--background, #fff);
+  margin: 0; /* 间距由 container 的 gap 控制 */
+  
+  background: var(--background, #ffffff);
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* 基础阴影 */
-  border: 1px solid rgba(0,0,0,0.05);     /* 淡淡的边框增加轮廓感 */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.05);
   overflow: hidden;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* 鼠标悬停效果 */
+/* 鼠标悬停动效 */
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
-/* 3. 图片区域 - 强制限制图片大小，防止变成巨图 */
+/* 3. 图片区域：★ 彻底解决巨大化问题 */
 .card-image {
   width: 100%;
-  height: 100px;            /* 固定图片容器高度 */
+  height: 110px;             /* 限制图片容器高度 */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 15px;
-  background-color: #fafafa; /* 淡淡的背景色区分图片区 */
+  background-color: #f8f9fa; /* 浅灰背景让图片更突出 */
+  padding: 10px;
+  box-sizing: border-box;
 }
 
 .card-image img {
-  height: 64px !important;  /* ★ 强制图片高度，防止巨大化 */
-  width: auto !important;   /* 保持比例 */
-  max-width: 80%;           /* 防止左右撑破 */
+  /* ★ 强制限制图片最大高度，绝对不会再变大了 */
+  height: 70px !important;   
+  width: auto !important;    
+  max-width: 100%;
   object-fit: contain;
 }
 
 /* 4. 文本区域 */
 .card-text {
-  padding: 15px;
+  flex: 1;
   width: 100%;
-  flex: 1;                  /* 占满剩余空间 */
+  padding: 15px;
+  box-sizing: border-box;
+  
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* 标题在上，年份在下 */
+  justify-content: space-between; /* 标题顶格，年份沉底 */
+  align-items: center;
   text-align: center;
 }
 
-/* 标题样式 */
+/* 标题链接 */
 .card-text a {
-  display: block;
-  color: #007bff;           /* 蓝色链接 */
-  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  color: #0366d6; /* GitHub 蓝 */
+  text-decoration: none;
   line-height: 1.4;
   
-  /* 限制标题最多显示3行，超出省略... (Webkit内核) */
+  /* 限制文字最多显示 3 行 */
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
@@ -93,13 +106,13 @@
   font-style: italic;
 }
 
-/* 手机端适配 */
-@media (max-width: 600px) {
+/* 手机端适配：单列显示 */
+@media (max-width: 768px) {
   .card-container {
-    justify-content: center; /* 手机上居中 */
+    justify-content: center; /* 居中对齐 */
   }
   .card {
-    width: 100%;            /* 手机上占满宽度或者保持固定 */
-    max-width: 320px;
+    width: 100%;
+    max-width: 320px; /* 手机上不要太宽 */
   }
 }
