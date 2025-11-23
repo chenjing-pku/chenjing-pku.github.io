@@ -1,148 +1,105 @@
-/* -------------------------------------------------------
-   Card Layout
-   修改记录：
-   1. 改为 inline-flex 实现自动横向网格排列
-   2. 增加 hover 悬浮动效
-   ------------------------------------------------------- */
+/* _sass/_card.scss */
 
-/* 外层卡片：固定高度 + 垂直布局 + 整齐对齐 */
+/* 1. 新增：卡片容器 - 负责把卡片横着排 */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;          /* 允许换行 */
+  gap: 20px;                /* 卡片之间的间距 */
+  justify-content: flex-start; /* 从左对齐 */
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/* 2. 卡片本体 - 强制固定尺寸 */
 .card {
-  /* ★ 核心修改：使用 inline-flex 让卡片自动横向排列 */
-  display: inline-flex; 
+  display: flex;
   flex-direction: column;
   align-items: center;
-  vertical-align: top; /* 保证所有卡片顶部对齐 */
-
-  width: 260px;
-  height: 260px;                  /* ★ 固定卡片高度 */
-  margin: 12px;
-
-  background: var(--background);
-  border-radius: var(--rounded);
-  box-shadow: var(--shadow);
+  
+  /* ★ 核心修复：使用 flex 属性锁死宽度，防止被挤压或拉伸 */
+  flex: 0 0 260px;          
+  width: 260px;             /* 双重保险：固定宽度 */
+  height: 280px;            /*稍微增加高度以容纳长标题 */
+  
+  margin: 0;                /* 间距由 container 的 gap 控制 */
+  background: var(--background, #fff);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* 基础阴影 */
+  border: 1px solid rgba(0,0,0,0.05);     /* 淡淡的边框增加轮廓感 */
   overflow: hidden;
-
-  /* ★ 新增：添加平滑过渡动画，提升质感 */
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-/* ★ 新增：鼠标悬停时的上浮效果 */
+/* 鼠标悬停效果 */
 .card:hover {
-  transform: translateY(-4px);    /* 向上轻微浮动 */
-  box-shadow: 0 8px 16px rgba(0,0,0,0.12); /* 加深阴影 */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.12);
 }
 
-/* small 样式 */
-.card[data-style="small"] {
-  width: 240px;
-  height: 240px;
-}
-
-/* 图片区域：固定高度 */
+/* 3. 图片区域 - 强制限制图片大小，防止变成巨图 */
 .card-image {
   width: 100%;
-  height: 90px;
+  height: 100px;            /* 固定图片容器高度 */
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 6px;
+  padding-top: 15px;
+  background-color: #fafafa; /* 淡淡的背景色区分图片区 */
 }
 
 .card-image img {
-  max-height: 80px;
+  height: 64px !important;  /* ★ 强制图片高度，防止巨大化 */
+  width: auto !important;   /* 保持比例 */
+  max-width: 80%;           /* 防止左右撑破 */
   object-fit: contain;
-  /* 建议：如果图标原本颜色太深，可以加个透明度让它看起来像你截图里那样柔和 */
-  /* opacity: 0.8; */ 
 }
 
-/* 文本区域：固定布局 + 禁止单词分散拉伸 */
+/* 4. 文本区域 */
 .card-text {
-  flex: 1;
+  padding: 15px;
   width: 100%;
-  padding: 12px;
-
+  flex: 1;                  /* 占满剩余空间 */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-
+  justify-content: space-between; /* 标题在上，年份在下 */
   text-align: center;
-  text-align-last: center;
-
-  font-size: 0.98rem;
-
-  white-space: normal !important;       /* ★ 修复英文单词被拉开 */
-  word-spacing: normal !important;      /* ★ 修复间距问题 */
-  letter-spacing: normal !important;
 }
 
-.card-text > * {
-  margin: 0 !important;
-}
-
-/* 标题：固定高度 + 字体变大 + 禁止拉伸 */
-.card-title {
-  font-family: var(--heading);
-  font-weight: var(--semi-bold);
-
-  height: 48px;
-  overflow: hidden;
-  text-align: center;
-
-  white-space: normal !important;
-  word-spacing: normal !important;
-  letter-spacing: normal !important;
-
-  font-size: 1.05rem;
-  
-  /* 确保标题垂直居中（可选） */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* 链接标题 */
+/* 标题样式 */
 .card-text a {
-  font-size: 1.05rem;
-  text-align: center;
-  text-decoration: none; /* 去掉下划线，美观一点 */
-  color: inherit;        /* 继承文字颜色，或者设置为你想要的主题色 */
-
-  white-space: normal !important;
-  word-spacing: normal !important;
-  letter-spacing: normal !important;
+  display: block;
+  color: #007bff;           /* 蓝色链接 */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  
+  /* 限制标题最多显示3行，超出省略... (Webkit内核) */
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
-/* 链接 hover 效果 */
 .card-text a:hover {
   text-decoration: underline;
-  color: #0056b3; /* 鼠标放上去变成深蓝色，可根据需要调整 */
 }
 
-/* 副标题（年份）—— 修复英文单词变宽的问题 */
+/* 年份/副标题 */
 .card-subtitle {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #666;
   font-style: italic;
-  margin: 0 !important;
-
-  height: 22px;
-  line-height: 22px;
-
-  text-align: center;
-  text-align-last: center;
-
-  white-space: normal !important;
-  word-spacing: normal !important;
-  letter-spacing: normal !important;
-
-  font-size: 0.95rem;
-  opacity: 0.8; /* 让年份稍微淡一点，突出标题 */
 }
 
-/* 移动端适配：屏幕过窄时自动居中 */
+/* 手机端适配 */
 @media (max-width: 600px) {
+  .card-container {
+    justify-content: center; /* 手机上居中 */
+  }
   .card {
-     /* 手机上如果想让卡片居中，可以加上 margin auto */
-     display: flex; 
-     margin: 12px auto;
+    width: 100%;            /* 手机上占满宽度或者保持固定 */
+    max-width: 320px;
   }
 }
