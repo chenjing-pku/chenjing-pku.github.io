@@ -9,10 +9,14 @@ nav:
 
 ## Code
 
+<div class="card-container">
 {% include list.html component="card" data="projects" filter="group == 'code'" %}
+</div>
 
 {% include section.html %}
 
 ## Data
 
+<div class="card-container">
 {% include list.html component="card" data="projects" filter="group == 'data'" %}
+</div>
