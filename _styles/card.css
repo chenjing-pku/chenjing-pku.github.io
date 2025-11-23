@@ -3,9 +3,9 @@
   justify-content: stretch;
   align-items: center;
   flex-direction: column;
-  width: 350px;
+  width: 260px;
   max-width: calc(100% - 20px - 20px);
-  margin: 20px;
+  margin: 12px;
   background: var(--background);
   border-radius: var(--rounded);
   overflow: hidden;
@@ -28,9 +28,9 @@
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  gap: 20px;
+  gap: 12px;
   max-width: 100%;
-  padding: 20px;
+  padding: 10px;
 }
 
 .card-text > * {
