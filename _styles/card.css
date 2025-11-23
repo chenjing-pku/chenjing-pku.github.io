@@ -1,60 +1,66 @@
 @charset "UTF-8";
+/* 外层卡片：固定高度 + 垂直布局 + 整齐对齐 */
 .card {
-  height: 250px;
-  display: inline-flex;
-  justify-content: stretch;
-  align-items: center;
+  display: flex;
   flex-direction: column;
+  align-items: center;
   width: 260px;
-  justify-content: space-between;
-  max-width: calc(100% - 20px - 20px);
+  height: 260px; /* ★ 固定卡片高度（可微调） */
   margin: 12px;
   background: var(--background);
   border-radius: var(--rounded);
-  overflow: hidden;
   box-shadow: var(--shadow);
-  vertical-align: top;
+  overflow: hidden;
 }
 
+/* 如果有 small 样式 */
 .card[data-style=small] {
-  width: 250px;
+  width: 240px;
+  height: 240px;
+}
+
+/* 图片区域：统一高度，卡片整齐 */
+.card-image {
+  width: 100%;
+  height: 90px; /* ★ 固定图片区域高度 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6px;
 }
 
 .card-image img {
-  height: 80px; /* 原来非常高，现在大幅压缩 */
-  width: 100%;
-  object-fit: contain; /* 图案完整展示，不会被裁切 */
-  padding-top: 10px; /* 简单美观 */
-  padding-bottom: 10px;
+  max-height: 80px;
+  object-fit: contain;
 }
 
+/* 文本区域：占据剩余空间，垂直居中对齐 */
 .card-text {
-  flex: 1;
-  display: inline-flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex: 1; /* ★ 占满剩余空间 */
+  width: 100%;
+  padding: 12px;
+  display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  gap: 12px;
-  max-width: 100%;
-  padding: 10px;
+  justify-content: space-between; /* ★ 保证内容上下均匀分布 */
+  align-items: center;
+  text-align: center;
 }
 
-.card-text > * {
+/* 标题：固定高度，标题长短不会影响卡片高度 */
+.card-title {
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
+  height: 48px; /* ★ 控制标题区域统一高度 */
+  overflow: hidden; /* 防止撑高卡片 */
   margin: 0 !important;
 }
 
-.card-title {
-  height: 48px; /* 控制标题区域统一高度 */
-  overflow: hidden; /* 多余文字不撑高卡片 */
-  text-align: center;
-  font-family: var(--heading);
-  font-weight: var(--semi-bold);
-}
-
+/* 副标题（年份等） */
 .card-subtitle {
-  margin-top: -10px !important;
   font-style: italic;
+  margin: 0 !important;
+  height: 22px; /* ★ 确保高度一致 */
+  line-height: 22px;
 }
 
 /*# sourceMappingURL=card.css.map */
