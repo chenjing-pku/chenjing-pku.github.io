@@ -1,15 +1,12 @@
-
-
+@charset "UTF-8";
 /* 外层卡片：固定高度 + 垂直布局 + 整齐对齐 */
 .card {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   width: 260px;
-  height: 260px;                  /* ★ 固定卡片高度 */
+  height: 260px; /* ★ 固定卡片高度 */
   margin: 12px;
-
   background: var(--background);
   border-radius: var(--rounded);
   box-shadow: var(--shadow);
@@ -17,7 +14,7 @@
 }
 
 /* small 样式 */
-.card[data-style="small"] {
+.card[data-style=small] {
   width: 240px;
   height: 240px;
 }
@@ -42,19 +39,15 @@
   flex: 1;
   width: 100%;
   padding: 12px;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
   text-align: center;
   text-align-last: center;
-
   font-size: 0.98rem;
-
-  white-space: normal !important;       /* ★ 修复英文单词被拉开 */
-  word-spacing: normal !important;      /* ★ 修复间距问题 */
+  white-space: normal !important; /* ★ 修复英文单词被拉开 */
+  word-spacing: normal !important; /* ★ 修复间距问题 */
   letter-spacing: normal !important;
 }
 
@@ -66,15 +59,12 @@
 .card-title {
   font-family: var(--heading);
   font-weight: var(--semi-bold);
-
   height: 48px;
   overflow: hidden;
   text-align: center;
-
   white-space: normal !important;
   word-spacing: normal !important;
   letter-spacing: normal !important;
-
   font-size: 1.05rem;
 }
 
@@ -82,7 +72,6 @@
 .card-text a {
   font-size: 1.05rem;
   text-align: center;
-
   white-space: normal !important;
   word-spacing: normal !important;
   letter-spacing: normal !important;
@@ -92,16 +81,14 @@
 .card-subtitle {
   font-style: italic;
   margin: 0 !important;
-
   height: 22px;
   line-height: 22px;
-
   text-align: center;
   text-align-last: center;
-
   white-space: normal !important;
   word-spacing: normal !important;
   letter-spacing: normal !important;
-
   font-size: 0.95rem;
 }
+
+/*# sourceMappingURL=card.css.map */
