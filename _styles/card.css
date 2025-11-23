@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .card {
   display: inline-flex;
   justify-content: stretch;
@@ -18,10 +19,11 @@
 }
 
 .card-image img {
-  height: 110px;
-  aspect-ratio: 3/2;
-  object-fit: cover;
+  height: 80px; /* 原来非常高，现在大幅压缩 */
   width: 100%;
+  object-fit: contain; /* 图案完整展示，不会被裁切 */
+  padding-top: 10px; /* 简单美观 */
+  padding-bottom: 10px;
 }
 
 .card-text {
