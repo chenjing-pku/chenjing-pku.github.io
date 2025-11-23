@@ -1,82 +1,93 @@
-/* _sass/_card.scss - Pure Text Grid Layout */
+/* _sass/_card.scss - Modified for Clean Text Grid */
 
-/* 1. Grid 容器：核心布局 */
+/* 1. 外层容器：控制整体网格布局 */
 .grid-container {
-  display: grid;
-  /* ★ 核心魔法：自动填充列。每列最小 250px，空间足够时自动平分剩余空间 */
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: 20px; /* 卡片之间的横向和纵向间距 */
+  display: flex;
+  flex-wrap: wrap;          /* 允许换行 */
+  gap: 20px;                /* 卡片之间的间距 */
   width: 100%;
-  margin-bottom: 50px; /* 大类之间的间距 */
+  margin-bottom: 40px;
 }
 
-/* 2. 纯文本卡片样式 */
-.card-plain {
+/* 2. 针对 list.html 可能产生的中间层级进行穿透处理 */
+.grid-container > * {
+  /* 确保 list.html 生成的元素（可能是 div 或 a 标签）能横向排列 */
+  display: block; 
+}
+
+/* 3. 卡片样式重置 */
+.card {
+  /* ★ 强制横向排版：计算宽度，每行放3个 (减去间距) */
+  width: calc(33.33% - 15px) !important; 
+  min-width: 280px;         /* 最小宽度，防止太窄 */
+  flex-grow: 1;             /* 允许自动填补空白 */
+  
+  display: flex;
+  flex-direction: column;
+  height: auto;             /* 高度自适应内容 */
+  min-height: 120px;        /* 最小高度 */
+  
+  margin: 0 !important;     /* 清除原有边距，由 gap 控制 */
   background: #ffffff;
   border-radius: 8px;
-  /* 简洁的阴影 */
-  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
   border: 1px solid rgba(0,0,0,0.05);
-  
-  /* 布局设置 */
-  display: flex;
-  flex-direction: column;
-  /* 设置一个最小高度，让卡片看起来整齐，高度会随内容自动增加 */
-  min-height: 140px; 
-  height: 100%; /* 占满网格单元的高度 */
-
-  transition: all 0.3s ease;
   overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
-/* 鼠标悬停效果 */
-.card-plain:hover {
-  transform: translateY(-5px); /* 上浮 */
-  box-shadow: 0 8px 15px rgba(0,0,0,0.12); /* 加深阴影 */
-  border-color: rgba(0,123,255, 0.2); /* 边框微亮 */
+/* 悬停效果 */
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-/* 卡片内部文本区域 */
+/* 4. ★ 核心修改：隐藏图标区域 (烧瓶/图片) */
+.card-image {
+  display: none !important;
+}
+
+/* 5. 文本区域样式优化 */
 .card-text {
-  padding: 25px 20px;
-  flex: 1; /* 占满剩余空间 */
+  padding: 20px !important;
+  width: 100%;
+  text-align: center;       /* 文字居中 */
   display: flex;
   flex-direction: column;
-  justify-content: center; /* 内容垂直居中 */
-  text-align: center; /* 文字水平居中 */
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-/* 标题链接样式 */
+/* 标题链接 */
 .card-text a {
+  font-size: 1.05rem;
   font-weight: 600;
-  font-size: 1.1rem;
-  color: #0366d6; /* GitHub 风格蓝 */
+  color: #007bff;           /* 蓝色链接 */
   text-decoration: none;
   line-height: 1.4;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   display: block;
 }
 
 .card-text a:hover {
   text-decoration: underline;
-  color: #0056b3;
 }
 
-/* 期刊/年份副标题样式 */
+/* 年份/期刊样式 (找回原本显示的数据) */
 .card-subtitle {
   font-size: 0.9rem;
   color: #666;
-  font-style: italic; /* 斜体显示 */
+  font-style: italic;
+  margin-top: 5px;
 }
 
-/* 手机端适配 (小于 600px 时) */
-@media (max-width: 600px) {
-  .grid-container {
-    /* 手机上强制变为单列 */
-    grid-template-columns: 1fr; 
-    gap: 15px;
+/* 6. 手机端适配 */
+@media (max-width: 768px) {
+  .card {
+    width: 100% !important; /* 手机上强制占满一行 */
   }
-  .card-plain {
-    min-height: auto; /* 手机上取消最小高度限制 */
+  .grid-container {
+    gap: 15px;
   }
 }
