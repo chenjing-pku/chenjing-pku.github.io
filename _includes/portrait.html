@@ -19,7 +19,7 @@
     aria-label="{{ member.name | default: "member link" | regex_strip }}"
   >
     {% if type %}
-      <!-- {% include icon.html icon=type.icon %} -->
+      {% include icon.html icon=type.icon %}
     {% endif %}
 
     <img
