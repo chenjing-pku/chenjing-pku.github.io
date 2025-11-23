@@ -19,10 +19,10 @@
   height: 240px;
 }
 
-/* 图片区域：固定高度，卡片整齐 */
+/* 图片区域：固定高度 */
 .card-image {
   width: 100%;
-  height: 90px; /* ★ 统一图片区域高度 */
+  height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -34,45 +34,61 @@
   object-fit: contain;
 }
 
-/* 文本区域：固定布局，不会撑开卡片 */
+/* 文本区域：固定布局 + 禁止单词分散拉伸 */
 .card-text {
-  flex: 1; /* ★ 占满剩余空间 */
+  flex: 1;
   width: 100%;
   padding: 12px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* ★ 上下均匀 */
+  justify-content: space-between;
   align-items: center;
   text-align: center;
-  font-size: 0.98rem; /* ★ 整体字体略微变大 */
+  text-align-last: center;
+  font-size: 0.98rem;
+  white-space: normal !important; /* ★ 修复英文单词被拉开 */
+  word-spacing: normal !important; /* ★ 修复间距问题 */
+  letter-spacing: normal !important;
 }
 
 .card-text > * {
   margin: 0 !important;
 }
 
-/* 标题：增大字体 + 固定高度保持整齐 */
+/* 标题：固定高度 + 字体变大 + 禁止拉伸 */
 .card-title {
   font-family: var(--heading);
   font-weight: var(--semi-bold);
-  height: 48px; /* ★ 标题高度一致 */
-  overflow: hidden; /* ☆ 长标题不影响布局 */
+  height: 48px;
+  overflow: hidden;
   text-align: center;
-  font-size: 1.05rem; /* ★ 标题字体变大 */
+  white-space: normal !important;
+  word-spacing: normal !important;
+  letter-spacing: normal !important;
+  font-size: 1.05rem;
 }
 
-/* 如果标题是链接（大多数情况下是） */
+/* 链接标题 */
 .card-text a {
-  font-size: 1.05rem; /* ★ 链接字体变大 */
+  font-size: 1.05rem;
+  text-align: center;
+  white-space: normal !important;
+  word-spacing: normal !important;
+  letter-spacing: normal !important;
 }
 
-/* 副标题（出版年份等） */
+/* 副标题（年份）—— 修复英文单词变宽的问题 */
 .card-subtitle {
   font-style: italic;
   margin: 0 !important;
-  height: 22px; /* ★ 保证高度一致 */
+  height: 22px;
   line-height: 22px;
-  font-size: 0.95rem; /* ★ 副标题字体变大 */
+  text-align: center;
+  text-align-last: center;
+  white-space: normal !important;
+  word-spacing: normal !important;
+  letter-spacing: normal !important;
+  font-size: 0.95rem;
 }
 
 /*# sourceMappingURL=card.css.map */
