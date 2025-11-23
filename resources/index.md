@@ -17,8 +17,17 @@ nav:
         <a href="{{ item.url | default: item.pdf | default: item.redirect | default: item.link | default: '#' }}" target="_blank">
           {{ item.title }}
         </a>
+        
         <div class="custom-card-meta">
-           {{ item.venue }} {{ item.year }}
+          {% assign venue_text = item.venue | default: item.publication | default: item.journal | default: item.conference %}
+          
+          {% if venue_text %}
+            <span class="venue-badge">{{ venue_text }}</span>
+          {% endif %}
+          
+          {% if item.year %}
+            <span class="year-badge">{{ item.year }}</span>
+          {% endif %}
         </div>
       </div>
     </div>
@@ -38,7 +47,15 @@ nav:
           {{ item.title }}
         </a>
         <div class="custom-card-meta">
-           {{ item.venue }} {{ item.year }}
+          {% assign venue_text = item.venue | default: item.publication | default: item.journal | default: item.conference %}
+          
+          {% if venue_text %}
+            <span class="venue-badge">{{ venue_text }}</span>
+          {% endif %}
+          
+          {% if item.year %}
+            <span class="year-badge">{{ item.year }}</span>
+          {% endif %}
         </div>
       </div>
     </div>
