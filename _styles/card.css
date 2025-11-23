@@ -1,10 +1,12 @@
 @charset "UTF-8";
 .card {
+  height: 250px;
   display: inline-flex;
   justify-content: stretch;
   align-items: center;
   flex-direction: column;
   width: 260px;
+  justify-content: space-between;
   max-width: calc(100% - 20px - 20px);
   margin: 12px;
   background: var(--background);
@@ -27,10 +29,12 @@
 }
 
 .card-text {
+  flex: 1;
   display: inline-flex;
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+  justify-content: space-between;
   gap: 12px;
   max-width: 100%;
   padding: 10px;
@@ -41,6 +45,9 @@
 }
 
 .card-title {
+  height: 48px; /* 控制标题区域统一高度 */
+  overflow: hidden; /* 多余文字不撑高卡片 */
+  text-align: center;
   font-family: var(--heading);
   font-weight: var(--semi-bold);
 }
