@@ -1,94 +1,82 @@
-/* _sass/_card.scss */
+/* _sass/_card.scss - Pure Text Grid Layout */
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;          /* 必须：允许换行 */
-  gap: 24px;                /* 卡片间距 */
-  justify-content: flex-start;
+/* 1. Grid 容器：核心布局 */
+.grid-container {
+  display: grid;
+  /* ★ 核心魔法：自动填充列。每列最小 250px，空间足够时自动平分剩余空间 */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px; /* 卡片之间的横向和纵向间距 */
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 50px; /* 大类之间的间距 */
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-  /* ★ 强制锁死尺寸，防止被挤压或撑大 */
-  flex: 0 0 260px;          /* 关键：不许伸缩，固定260px */
-  width: 260px;
-  height: 280px;
-  
+/* 2. 纯文本卡片样式 */
+.card-plain {
   background: #ffffff;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  /* 简洁的阴影 */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.08);
   border: 1px solid rgba(0,0,0,0.05);
-  overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-  margin: 0; /* 这里的 margin 设为0，由 gap 控制间距 */
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
-}
-
-.card-image {
-  width: 100%;
-  height: 110px;            /* 固定顶部图片区域高度 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f9f9f9;
-  padding: 10px;
-  box-sizing: border-box;
-}
-
-/* ★ 彻底解决巨大化问题 */
-.card-image img, 
-.card-image i, 
-.card-image svg {
-  height: 64px !important;  /* 强制限制高度 */
-  width: auto !important;   /* 宽度自动保持比例 */
-  max-width: 100%;
-  object-fit: contain;
-}
-
-.card-text {
-  flex: 1;
-  padding: 15px;
-  width: 100%;
-  box-sizing: border-box;
+  
+  /* 布局设置 */
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-}
+  /* 设置一个最小高度，让卡片看起来整齐，高度会随内容自动增加 */
+  min-height: 140px; 
+  height: 100%; /* 占满网格单元的高度 */
 
-.card-text a {
-  font-size: 0.95rem;
-  font-weight: 600;
-  color: #007bff;
-  text-decoration: none;
-  line-height: 1.4;
-  
-  /* 限制文字行数 */
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
+  transition: all 0.3s ease;
   overflow: hidden;
 }
 
-.card-subtitle {
-  font-size: 0.85rem;
-  color: #666;
-  margin-top: 8px;
-  font-style: italic;
+/* 鼠标悬停效果 */
+.card-plain:hover {
+  transform: translateY(-5px); /* 上浮 */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.12); /* 加深阴影 */
+  border-color: rgba(0,123,255, 0.2); /* 边框微亮 */
 }
 
-/* 手机适配 */
-@media (max-width: 768px) {
-  .card-container {
-    justify-content: center;
+/* 卡片内部文本区域 */
+.card-text {
+  padding: 25px 20px;
+  flex: 1; /* 占满剩余空间 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* 内容垂直居中 */
+  text-align: center; /* 文字水平居中 */
+}
+
+/* 标题链接样式 */
+.card-text a {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #0366d6; /* GitHub 风格蓝 */
+  text-decoration: none;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.card-text a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* 期刊/年份副标题样式 */
+.card-subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  font-style: italic; /* 斜体显示 */
+}
+
+/* 手机端适配 (小于 600px 时) */
+@media (max-width: 600px) {
+  .grid-container {
+    /* 手机上强制变为单列 */
+    grid-template-columns: 1fr; 
+    gap: 15px;
+  }
+  .card-plain {
+    min-height: auto; /* 手机上取消最小高度限制 */
   }
 }
