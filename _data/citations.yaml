@@ -288,11 +288,12 @@
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.3969/j.issn.1672-2922.2021.03.009
-  title: "\u4E07\u65B9\u533B\u5B66\u7F51-\u533B\u5B66\u4E13\u4E1A\u4FE1\u606F\u670D\
-    \u52A1\u63D0\u4F9B\u5546"
-  authors: []
-  publisher: ''
-  date: ''
+  title: "\u4E0D\u540C\u8A00\u8BED\u8BC6\u522B\u80FD\u529B\u7684\u8001\u5E74\u6027\
+    \u804B\u8033\u8717\u7535\u56FE\u7279\u5F81\u5206\u6790"
+  authors:
+  - 'ZHANG Yanmei '
+  publisher: "\u4E2D\u534E\u8033\u79D1\u5B66\u6742\u5FD7"
+  date: '2021-01-01'
   link: https://doi.org/g9f38d
   type: paper
   plugin: sources.py
@@ -524,10 +525,12 @@
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.3969/j.issn.1672-4933.2018.02.005
-  title: "\u4EBA\u673A\u6821\u9A8C-\u4E07\u65B9\u533B\u5B66\u7F51"
-  authors: []
-  publisher: ''
-  date: ''
+  title: "\u611F\u97F3\u795E\u7ECF\u6027\u542C\u529B\u635F\u5931\u60A3\u8005\u7684\
+    \u9891\u7387\u8C03\u5236\u8FA8\u522B\u548C\u58F0\u8C03\u8BC6\u522B"
+  authors:
+  - 'FU Zhen '
+  publisher: "\u4E2D\u56FD\u542C\u529B\u8BED\u8A00\u5EB7\u590D\u79D1\u5B66\u6742\u5FD7"
+  date: '2018-01-01'
   link: https://doi.org/g9f38s
   type: paper
   plugin: sources.py
