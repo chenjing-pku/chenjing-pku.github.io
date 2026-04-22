@@ -8,7 +8,7 @@ nav:
 # {% include icon.html icon="fa-solid fa-users" %}Recruitment
 
 ## 脑机方向博士后研究人员招聘启事
-课题组现面向海内外公开招聘脑机方向博士后研究人员，详情请点击[北京大学博士后招聘启事](https://postdocs.pku.edu.cn/zpxx/5a08f36091444a6cb0d65276399eecd9.htm)查看。
+本课题组现面向海内外公开招聘脑机方向博士后研究人员，详情请点击[北京大学博士后招聘启事](https://postdocs.pku.edu.cn/zpxx/5a08f36091444a6cb0d65276399eecd9.htm)查看。
 
 ## 科研助理招聘启事
 
