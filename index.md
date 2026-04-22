@@ -9,7 +9,7 @@ Jing received her Ph.D degree from Peking University in signal and information p
 
 课题组现面向海内外公开招聘脑机方向博士后研究人员，详情请点击[北京大学博士后招聘启事](https://postdocs.pku.edu.cn/zpxx/5a08f36091444a6cb0d65276399eecd9.htm)查看。
 
-课题组现招聘科研助理1-2名，招收1名博士研究生和2至3名本科生科研实习生，欢迎感兴趣的研究者和同学加入我们！详情见：[recruitment](/recruitment/)
+课题组现招聘科研助理1-2名，招收1名博士研究生和2至3名本科生科研实习生，欢迎感兴趣的研究者和同学加入我们！详情请点击[recruitment](/recruitment/)查看。
 
 {% include section.html %}
 
